@@ -1,0 +1,142 @@
+.contact__container {
+  background: var(--color-bg1);
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 4rem;
+  height: 25rem;
+  margin: 5rem auto;
+  border-radius: 1rem;
+}
+
+/* ============================== ASIDE ============================= */
+
+.contact__aside {
+  background: var(--color-primary);
+  padding: 3rem;
+  border-radius: 1rem;
+  position: relative;
+  bottom: 10rem;
+}
+
+.contact__aside h2 {
+  text-align: left;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.contact__aside p {
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.contact__details li {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.contact__details li h5 {
+  font-size: 0.8rem;
+}
+
+.contact__socials {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contact__socials li a img {
+  width: 1.5rem;
+}
+.aside__image {
+  width: 10rem;
+  margin-bottom: 2rem;
+}
+
+/* ==================================================== FORM ========================= */
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-right: 4rem;
+}
+
+.form__name {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.contact__form input[type="text"] {
+  width: 50%;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  background: var(--color-bg);
+  color: var(--color-white);
+}
+
+.contact__form .btn {
+  width: max-content;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+/* ================================== MEDIA QUERIES (Tablets) ===================================*/
+@media screen and (max-width: 1024px) {
+  .contact {
+    padding-bottom: 0;
+  }
+  .contact__container {
+    gap: 1.5rem;
+    margin-top: 3rem;
+    height: auto;
+    padding: 1.5rem;
+  }
+
+  .contact__aside {
+    width: auto;
+    padding: 1.5rem;
+    bottom: 0;
+  }
+
+  .contact__form {
+    align-self: center;
+    margin-right: 1.5rem;
+  }
+}
+
+/* ================================== MEDIA QUERIES (Phones) ===================================*/
+@media screen and (max-width: 600px) {
+  .contact {
+    padding-bottom: 0;
+  }
+  .contact__container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .contact__form {
+    align-self: center;
+    margin: 0 1.5rem 3rem;
+  }
+
+  .form__name {
+    flex-direction: column;
+  }
+
+  .form__name input[type="text"] {
+    width: 100%;
+  }
+}
+
+/* In order to make a working form, we will use a website called formspree.io */
+/* Create a account on tha website */
+/* After creating an account create a form on that website */
+/* It will provide us a link, so we have to copy that link and paste it into action = " " and our form method should be POST */
